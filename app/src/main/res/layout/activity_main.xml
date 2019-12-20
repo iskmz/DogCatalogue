@@ -1,0 +1,131 @@
+<RelativeLayout
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="@drawable/back_main"
+    android:orientation="vertical"
+    xmlns:android="http://schemas.android.com/apk/res/android">
+
+
+    <TextView
+        android:id="@+id/txtTitle"
+        android:layout_alignParentTop="true"
+        android:layout_alignParentStart="true"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:gravity="center"
+        android:text="Dog Catalogue"
+        android:layout_marginTop="20dp"
+        android:layout_marginStart="20dp"
+        android:layout_marginEnd="20dp"
+        android:textSize="34sp"
+        android:textStyle="bold|italic"
+        android:textColor="#FFFFFF"/>
+
+
+    <ImageButton
+        android:id="@+id/btnRandom"
+        android:layout_below="@id/btnBreed"
+        android:layout_alignStart="@id/txtTitle"
+        android:layout_width="100dp"
+        android:layout_height="100dp"
+        android:layout_gravity="center"
+        android:layout_marginTop="20dp"
+        android:layout_marginEnd="20dp"
+        android:layout_marginStart="20dp"
+        android:src="@drawable/dice"
+        android:scaleType="fitXY"
+        android:background="@drawable/back_btn"
+        />
+
+    <TextView
+        android:id="@+id/txtBtnRandom"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="Random Image"
+        android:textColor="#ffffff"
+        android:layout_below="@id/btnRandom"
+        android:layout_alignStart="@id/btnRandom"
+        android:layout_alignEnd="@id/btnRandom"
+        android:gravity="center"
+        android:layout_marginTop="5dp"
+        android:textSize="14sp"
+        android:textStyle="italic"
+        />
+
+
+    <ImageButton
+        android:id="@+id/btnBreed"
+        android:layout_below="@id/txtTitle"
+        android:layout_alignEnd="@id/txtTitle"
+        android:layout_width="100dp"
+        android:layout_height="100dp"
+        android:layout_gravity="center"
+        android:layout_marginTop="40dp"
+        android:layout_marginEnd="20dp"
+        android:layout_marginStart="20dp"
+        android:src="@drawable/ic_list"
+        android:scaleType="fitXY"
+        android:padding="5dp"
+        android:background="@drawable/back_btn"
+        />
+
+    <TextView
+        android:id="@+id/txtBtnBreeds"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="Breeds List"
+        android:textColor="#ffffff"
+        android:layout_below="@id/btnBreed"
+        android:layout_alignStart="@id/btnBreed"
+        android:layout_alignEnd="@id/btnBreed"
+        android:gravity="center"
+        android:layout_marginTop="5dp"
+        android:textSize="14sp"
+        android:textStyle="italic"
+        />
+
+
+    <ImageButton
+        android:id="@+id/btnFav"
+        android:layout_width="100dp"
+        android:layout_height="100dp"
+        android:layout_below="@id/btnRandom"
+        android:layout_alignEnd="@id/txtTitle"
+        android:layout_marginEnd="20dp"
+        android:layout_marginTop="20dp"
+        android:background="@drawable/back_btn"
+        android:src="@drawable/ic_star"
+        android:scaleType="fitXY"
+        android:padding="10dp"/>
+
+    <TextView
+        android:id="@+id/txtBtnFav"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="Favorites"
+        android:textColor="#ffffff"
+        android:layout_below="@id/btnFav"
+        android:layout_alignStart="@id/btnFav"
+        android:layout_alignEnd="@id/btnFav"
+        android:gravity="center"
+        android:layout_marginTop="5dp"
+        android:textSize="14sp"
+        android:textStyle="italic"
+        />
+
+    <ImageButton
+        android:id="@+id/btnAboutMe"
+        android:layout_width="80dp"
+        android:layout_height="80dp"
+        android:layout_gravity="center"
+        android:layout_marginTop="20dp"
+        android:layout_marginEnd="20dp"
+        android:background="@drawable/ic_info"
+        android:backgroundTint="#ffffff"
+        android:layout_below="@id/btnFav"
+        android:layout_alignStart="@id/btnRandom"
+        android:layout_alignEnd="@id/btnRandom"
+        />
+
+
+</RelativeLayout>
